@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F1f5f8;
+}
+
+main {
+    background: #F1f5f8;
+}
+
+header.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background-color: #fff;
+    width: 100%;
+    min-height: 48px;
+    display: flex;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+nav.nav {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+
+}
+
+nav h4 {
+    color: rgb(84, 149, 253);
+}
+
+nav ul, 
+nav li {
+    text-decoration: none;
+    display: inline-block;   
+}
+
+nav li:first-child {
+    margin-right: 14px;
+}
+
+.nav-links .link {
+    text-transform: capitalize;
+    color: #1f1f24;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.color-wrapper {
+    padding: 16px;
+    background-color: #1f1f24;
+    border-radius: 8px;
+}
+
+.color-wrapper h2 {
+    font-size: 34px;
+    letter-spacing: .2rem;
+    color: #fff;
+}
+
+h2 span.color {
+    color: rgb(84, 149, 253);
+}
+
+.btn {
+    text-decoration: none;
+    outline: none;
+    padding: 7px 12px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    border-radius: 6px;
+    border: 2px solid #1f1f24;
+    color: #1f1f24;
+    background-color: #F1f5f8;
+    margin-top: 32px;
+    cursor: pointer;
+}
