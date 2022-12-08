@@ -36,7 +36,7 @@ nav.nav {
 }
 
 nav h4 {
-    color: rgb(84, 149, 253);
+    color: #1f1f24;
 }
 
 nav ul, 
@@ -52,6 +52,14 @@ nav li:first-child {
 .nav-links .link {
     text-transform: capitalize;
     color: #1f1f24;
+}
+
+.link {
+    cursor: pointer;
+}
+
+.link.active {
+    color: #58a6ff;
 }
 
 .container {

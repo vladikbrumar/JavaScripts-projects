@@ -3,13 +3,25 @@ const colors = ['#74D3AE', '#678D58', '#A6C48A', '#F6E7CB', '#DD9787',
 
 const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
 
+let pickerMode = 'simple';
+let pickedColor = '';
+
 let btn = document.getElementById('btn');
 let mainBlock = document.querySelector('main');
 let colorText = document.querySelector('.color');
+let links = document.getElementsByClassName('link');
+
+window.onload = function(e) {
+    clickOnLink();
+}
 
 btn.addEventListener('click', () => {
-    let pickedColor = colors[getRandomNumber(colors.length)];
-    pickedColor = generateHexColor();
+    if(pickerMode === 'hex'){
+        pickedColor = generateHexColor();
+    } else {
+        pickedColor = colors[getRandomNumber(colors.length)];
+    }
+    console.log(pickerMode);
     mainBlock.style.background = pickedColor;
     colorText.textContent = pickedColor;
 })
@@ -26,6 +38,18 @@ function generateHexColor() {
         counter--;
     }
     return color;
+}
+
+function clickOnLink(){
+    for(let link of links){
+        link.addEventListener('click', ()=>{
+            for(let link of links){
+                link.classList.remove('active');
+            }
+            link.classList.add('active');
+            pickerMode = link.textContent;
+        })
+    }
 }
 
 
