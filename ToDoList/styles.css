@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #BFD1E5;
+}
+
+.section-container {
+    background: white;
+    width: 40vw;
+    padding: 3rem 1.5rem 2rem;
+    border-radius: 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-center {
+    background: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.grocery-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 80%;
+}
+
+.grocery-form h3 {
+    color: #10413c;
+    font-size: 1.4rem;
+    line-height: 125%;
+    letter-spacing: .08rem;
+    text-transform: capitalize;
+    margin-bottom: 1.5rem;
+}
+
+.form-control input::placeholder {
+    color: #1f1f24;
+}
+
+#grocery,
+.submit-btn {
+    padding: 8px 8px;
+    font-size: 1rem;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    float: left;
+}
+
+#grocery {
+    background: #ddf5f0;
+    color: #1f1f24;
+    border-radius: 6px 0 0 6px;
+}
+
+.submit-btn {
+    border-radius: 0 6px 6px 0;
+    color: white;
+    background: #006d77;
+    text-transform: capitalize;
+    padding: 8px 16px;
+    letter-spacing: .1rem;
+}
+
+.grocery-container {
+    margin-top: 2rem;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    visibility: hidden;
+}
+
+.grocery-list {
+    width: 100%;
+}
+
+.grocery-item {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 1.2rem;  
+    text-transform: capitalize;
+    letter-spacing: .1rem;
+}
+
+.btn-container {
+    font-size: 1.5rem;
+    display: flex; 
+    justify-content: space-between;
+    width: 2rem;
+}
+
+.btn-container button,
+.clear-btn {
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    background: transparent;
+    cursor: pointer;
+}
+
+.edit-btn {
+    color: #198754;
+}
+
+.delete-btn {
+    color: #dc3545;
+}
+
+.clear-btn {
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    letter-spacing: .2rem;
+    line-height: 125%;
+    background: #212529;
+    color: #fff;
+    border-radius: 6px;
+    padding: 6px 14px;
+}

@@ -4,12 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple ToDo List</title>
+    <title>Grocery List</title>
 
     <link rel="stylesheet" href="./styles.css">
     <script src="./script.js" defer></script>
 </head>
 <body>
-    
+    <section class="section-center">
+        <div class="section-container">
+            <form class="grocery-form">
+                <p class="alert"></p>
+                <h3>grocery list</h3>
+                <div class="form-control">
+                    <input type="text" id="grocery" placeholder="e.g. eggs">
+                    <button type="submit" class="submit-btn">submit</button>
+                </div>
+            </form>
+            <div class="grocery-container">
+                <div class="grocery-list">
+                    <article class="grocery-item">
+                        <p class="title">item</p>
+                        <div class="btn-container">
+                            <button type="button" class="edit-btn">
+                                <i class="fa-regular fa-pen-to-square"></i>
+                            </button>
+                            <button type="button" class="delete-btn">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+                <button type="button" class="clear-btn">Clear</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/afa5590a3b.js" crossorigin="anonymous"></script>
 </body>
 </html>
