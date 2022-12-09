@@ -41,16 +41,43 @@ body {
 
 .grocery-form h3 {
     color: #10413c;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     line-height: 125%;
     letter-spacing: .08rem;
     text-transform: capitalize;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
+
+.alert {
+    margin-bottom: 1rem;
+    height: 1.35rem;
+    width: 50%;
+    font-size: 0.9rem;
+    display: none;
+    align-items: center;
+    text-align: center;
+    border-radius: 0.25rem;
+    letter-spacing: .05rem;
+    text-transform: capitalize;
+}
+
+.alert-danger {
+    display: grid;
+    color: #dc3545;
+    background: #f8d7da;
+}
+
+.alert-success {
+    display: grid;
+    color: #198754;
+    background: #d4edda;
+}
+
 
 .form-control input::placeholder {
     color: #1f1f24;
 }
+
 
 #grocery,
 .submit-btn {
@@ -75,6 +102,8 @@ body {
     text-transform: capitalize;
     padding: 8px 16px;
     letter-spacing: .1rem;
+    cursor: pointer;
+    width: 90px;
 }
 
 .grocery-container {
@@ -87,6 +116,10 @@ body {
     visibility: hidden;
 }
 
+.show-container {
+    visibility: visible;
+}
+
 .grocery-list {
     width: 100%;
 }
@@ -96,6 +129,7 @@ body {
     justify-content: space-between;
     width: 90%;
     margin: 0 auto;
+    padding-bottom: 0.5rem;
 }
 
 .title {
