@@ -109,7 +109,6 @@ function editItem(e) {
 
 }
 
-
 // * set back to default 
 function setBackToDefault(){
     grocery.value = '';
@@ -134,12 +133,10 @@ function getLocalStorage(){
 
 function removeFromLocalStorage(id) {
     let items = getLocalStorage();
-    items = items.filter((item) => {
-        if(item.id !== id){
-            return item;
-        }
+    let updatedItems = items.filter(item => {
+        return item.id !== id;
     })
-    localStorage.setItem('list', JSON.stringify(items));
+    localStorage.setItem('list', JSON.stringify(updatedItems));
 }
 
 function editLocalStorage(id, value){
